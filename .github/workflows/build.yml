@@ -44,7 +44,7 @@ jobs:
       # https://github.com/marketplace/actions/github-pull-request-action
       - name: Create pull request
         id: open-pr
-        uses: repo-sync/pull-request@v2
+        uses: repo-sync/pull-request@v3
         with:
           github_token: ${{ secrets.TOKEN }}
           destination_branch: ${{ github.event.repository.default_branch }}
